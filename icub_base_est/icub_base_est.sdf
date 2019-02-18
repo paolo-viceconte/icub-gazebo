@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+    <model name='icub_base_est'>
+        <!-- Include the raw model -->
+        <include>
+            <uri>model://iCubGazeboV2_5</uri>
+        </include>
+        
+        <!-- Estimate base link pose and velocity -->
+        <plugin name="basestate" filename="libgazebo_yarp_basestate.so">
+             <yarpConfigurationFile>model://icub_base_est/conf/base.ini</yarpConfigurationFile>
+        </plugin>
+    </model>
+</sdf>
