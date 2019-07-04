@@ -10,5 +10,9 @@
         <plugin name="basestate" filename="libgazebo_yarp_basestate.so">
              <yarpConfigurationFile>model://icub_base_est/conf/base.ini</yarpConfigurationFile>
         </plugin>
+
+        <plugin name='externalwrench' filename='libgazebo_yarp_externalwrench.so'>
+           <yarpConfigurationFile>model://icub/conf/gazebo_icub_robotname.ini</yarpConfigurationFile>
+        </plugin>
     </model>
 </sdf>
